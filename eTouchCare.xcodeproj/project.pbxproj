@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114FA475A654B0CB274825F9 /* Pods_eTouchCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8533CB425E568521E86040 /* Pods_eTouchCare.framework */; };
+		35EEE83CA850ED76E046E3C1 /* Pods_eTouchCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3060111598E3C3D2038E1EB1 /* Pods_eTouchCareTests.framework */; };
 		3E2AD9C11DF86C7600946316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C01DF86C7600946316 /* AppDelegate.swift */; };
-		3E2AD9C31DF86C7600946316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C21DF86C7600946316 /* ViewController.swift */; };
+		3E2AD9C31DF86C7600946316 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C21DF86C7600946316 /* LoginVC.swift */; };
 		3E2AD9C61DF86C7600946316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C41DF86C7600946316 /* Main.storyboard */; };
 		3E2AD9C81DF86C7600946316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C71DF86C7600946316 /* Assets.xcassets */; };
 		3E2AD9CB1DF86C7600946316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD9C91DF86C7600946316 /* LaunchScreen.storyboard */; };
 		3E2AD9D61DF86C7600946316 /* eTouchCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AD9D51DF86C7600946316 /* eTouchCareTests.swift */; };
+		3E2AD9E11DF86DA900946316 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD9E01DF86DA900946316 /* GoogleService-Info.plist */; };
+		3E78068B1DF89E5200D5EFC7 /* PatientListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */; };
+		3E78068D1DF8A16600D5EFC7 /* PatientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068C1DF8A16600D5EFC7 /* PatientListCell.swift */; };
+		3E78068F1DF8B0D000D5EFC7 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068E1DF8B0D000D5EFC7 /* Patient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3060111598E3C3D2038E1EB1 /* Pods_eTouchCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTouchCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2AD9BD1DF86C7600946316 /* eTouchCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTouchCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2AD9C01DF86C7600946316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E2AD9C21DF86C7600946316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E2AD9C21DF86C7600946316 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3E2AD9C51DF86C7600946316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E2AD9C71DF86C7600946316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E2AD9CA1DF86C7600946316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +43,15 @@
 		3E2AD9D11DF86C7600946316 /* eTouchCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eTouchCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2AD9D51DF86C7600946316 /* eTouchCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTouchCareTests.swift; sourceTree = "<group>"; };
 		3E2AD9D71DF86C7600946316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2AD9E01DF86DA900946316 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientListVC.swift; sourceTree = "<group>"; };
+		3E78068C1DF8A16600D5EFC7 /* PatientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientListCell.swift; sourceTree = "<group>"; };
+		3E78068E1DF8B0D000D5EFC7 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		3EED3B88853732BEFC542146 /* Pods-eTouchCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		A10D158132D3193DE7A05850 /* Pods-eTouchCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8533CB425E568521E86040 /* Pods_eTouchCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTouchCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B982362C5433D8871B59A5AD /* Pods-eTouchCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCare/Pods-eTouchCare.release.xcconfig"; sourceTree = "<group>"; };
+		D92486328C8F0242BB300606 /* Pods-eTouchCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCare/Pods-eTouchCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114FA475A654B0CB274825F9 /* Pods_eTouchCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EEE83CA850ED76E046E3C1 /* Pods_eTouchCareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,8 @@
 				3E2AD9BF1DF86C7600946316 /* eTouchCare */,
 				3E2AD9D41DF86C7600946316 /* eTouchCareTests */,
 				3E2AD9BE1DF86C7600946316 /* Products */,
+				FE621A4030BEAF6B02BD033E /* Pods */,
+				5B1C5CA17BCB9B3099F6007D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +97,15 @@
 		3E2AD9BF1DF86C7600946316 /* eTouchCare */ = {
 			isa = PBXGroup;
 			children = (
+				3E7806871DF88C5D00D5EFC7 /* View */,
+				3E7806861DF88C5800D5EFC7 /* Model */,
+				3E7806851DF88C5000D5EFC7 /* Controller */,
 				3E2AD9C01DF86C7600946316 /* AppDelegate.swift */,
-				3E2AD9C21DF86C7600946316 /* ViewController.swift */,
 				3E2AD9C41DF86C7600946316 /* Main.storyboard */,
 				3E2AD9C71DF86C7600946316 /* Assets.xcassets */,
 				3E2AD9C91DF86C7600946316 /* LaunchScreen.storyboard */,
 				3E2AD9CC1DF86C7600946316 /* Info.plist */,
+				3E2AD9E01DF86DA900946316 /* GoogleService-Info.plist */,
 			);
 			path = eTouchCare;
 			sourceTree = "<group>";
@@ -96,6 +119,51 @@
 			path = eTouchCareTests;
 			sourceTree = "<group>";
 		};
+		3E7806851DF88C5000D5EFC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E2AD9C21DF86C7600946316 /* LoginVC.swift */,
+				3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E7806861DF88C5800D5EFC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E78068E1DF8B0D000D5EFC7 /* Patient.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E7806871DF88C5D00D5EFC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E78068C1DF8A16600D5EFC7 /* PatientListCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5B1C5CA17BCB9B3099F6007D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD8533CB425E568521E86040 /* Pods_eTouchCare.framework */,
+				3060111598E3C3D2038E1EB1 /* Pods_eTouchCareTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE621A4030BEAF6B02BD033E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D92486328C8F0242BB300606 /* Pods-eTouchCare.debug.xcconfig */,
+				B982362C5433D8871B59A5AD /* Pods-eTouchCare.release.xcconfig */,
+				A10D158132D3193DE7A05850 /* Pods-eTouchCareTests.debug.xcconfig */,
+				3EED3B88853732BEFC542146 /* Pods-eTouchCareTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E2AD9DA1DF86C7600946316 /* Build configuration list for PBXNativeTarget "eTouchCare" */;
 			buildPhases = (
+				AE58D9F98891DD18EB6BAFA2 /* [CP] Check Pods Manifest.lock */,
 				3E2AD9B91DF86C7600946316 /* Sources */,
 				3E2AD9BA1DF86C7600946316 /* Frameworks */,
 				3E2AD9BB1DF86C7600946316 /* Resources */,
+				7844F880B12D01B1E6F2FDF7 /* [CP] Embed Pods Frameworks */,
+				77D4238A348B41D66A1168CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E2AD9DD1DF86C7600946316 /* Build configuration list for PBXNativeTarget "eTouchCareTests" */;
 			buildPhases = (
+				43360F8F9DA2DD6D9B65F736 /* [CP] Check Pods Manifest.lock */,
 				3E2AD9CD1DF86C7600946316 /* Sources */,
 				3E2AD9CE1DF86C7600946316 /* Frameworks */,
 				3E2AD9CF1DF86C7600946316 /* Resources */,
+				29FBD216A1C477220A656CEC /* [CP] Embed Pods Frameworks */,
+				B8D75F936863BC272B18121F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E2AD9CB1DF86C7600946316 /* LaunchScreen.storyboard in Resources */,
+				3E2AD9E11DF86DA900946316 /* GoogleService-Info.plist in Resources */,
 				3E2AD9C81DF86C7600946316 /* Assets.xcassets in Resources */,
 				3E2AD9C61DF86C7600946316 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +267,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29FBD216A1C477220A656CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43360F8F9DA2DD6D9B65F736 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77D4238A348B41D66A1168CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eTouchCare/Pods-eTouchCare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7844F880B12D01B1E6F2FDF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eTouchCare/Pods-eTouchCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE58D9F98891DD18EB6BAFA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D75F936863BC272B18121F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E2AD9B91DF86C7600946316 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2AD9C31DF86C7600946316 /* ViewController.swift in Sources */,
+				3E2AD9C31DF86C7600946316 /* LoginVC.swift in Sources */,
+				3E78068D1DF8A16600D5EFC7 /* PatientListCell.swift in Sources */,
 				3E2AD9C11DF86C7600946316 /* AppDelegate.swift in Sources */,
+				3E78068B1DF89E5200D5EFC7 /* PatientListVC.swift in Sources */,
+				3E78068F1DF8B0D000D5EFC7 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,8 +498,10 @@
 		};
 		3E2AD9DB1DF86C7600946316 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92486328C8F0242BB300606 /* Pods-eTouchCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = eTouchCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamone.eTouchCare;
@@ -338,8 +511,10 @@
 		};
 		3E2AD9DC1DF86C7600946316 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B982362C5433D8871B59A5AD /* Pods-eTouchCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = eTouchCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamone.eTouchCare;
@@ -349,6 +524,7 @@
 		};
 		3E2AD9DE1DF86C7600946316 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10D158132D3193DE7A05850 /* Pods-eTouchCareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = eTouchCareTests/Info.plist;
@@ -361,6 +537,7 @@
 		};
 		3E2AD9DF1DF86C7600946316 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EED3B88853732BEFC542146 /* Pods-eTouchCareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = eTouchCareTests/Info.plist;
@@ -390,6 +567,7 @@
 				3E2AD9DC1DF86C7600946316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2AD9DD1DF86C7600946316 /* Build configuration list for PBXNativeTarget "eTouchCareTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +576,7 @@
 				3E2AD9DF1DF86C7600946316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
