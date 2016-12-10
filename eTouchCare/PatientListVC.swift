@@ -84,4 +84,31 @@ class PatientListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+        performSegueWithIdentifier("toDetail", sender: tableView.cellForRowAtIndexPath(indexPath))
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        
+        
+        
+        
+        let selectedCell = sender as? PatientListCell
+        let indexPath = tableView.indexPathForCell(selectedCell!)
+        let des = segue.destinationViewController.childViewControllers[0] as! PatientBasicVC
+        des.mPatient = self.patients[(indexPath?.row)!]
+        
+        
+        
+        
+        
+    
+    }
+    
 }

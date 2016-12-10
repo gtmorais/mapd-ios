@@ -384,7 +384,7 @@
         <!--Basic-->
         <scene sceneID="Zbr-gc-zOE">
             <objects>
-                <viewController id="ADQ-n5-Gpa" sceneMemberID="viewController">
+                <viewController id="ADQ-n5-Gpa" customClass="PatientBasicVC" customModule="eTouchCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y5j-q8-G6f"/>
                         <viewControllerLayoutGuide type="bottom" id="CQj-Ea-ovv"/>
@@ -392,9 +392,130 @@
                     <view key="view" contentMode="scaleToFill" id="aSz-Sq-sVU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-ej-nxj">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2gs-d7-pA2"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="3eV-bG-ATF">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="w96-Yk-xOn">
+                                            <connections>
+                                                <action selector="backDidTouched:" destination="ADQ-n5-Gpa" id="qul-YK-Vt8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4SF-1W-6jl">
+                                <rect key="frame" x="70" y="94" width="460" height="407"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ftn-dq-fUd" userLabel="Label Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="407"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhJ-Yj-sb8">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-c9-OkV">
+                                                <rect key="frame" x="0.0" y="68" width="35" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-hL-qZZ">
+                                                <rect key="frame" x="0.0" y="136" width="62" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-ZB-qhF">
+                                                <rect key="frame" x="0.0" y="204" width="49" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Diagnosis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nk-1Y-WIS">
+                                                <rect key="frame" x="0.0" y="272" width="80" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMZ-Gg-Kyf">
+                                                <rect key="frame" x="0.0" y="339" width="41" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gw4-ju-Xr1" userLabel="Value Stack View">
+                                        <rect key="frame" x="208" y="0.0" width="252" height="407"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="nameValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPa-4L-DU3">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ageValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGO-NN-QNz">
+                                                <rect key="frame" x="0.0" y="68" width="70" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="genderValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-L8-2xQ">
+                                                <rect key="frame" x="0.0" y="136" width="97" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="roomValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5b-xm-Z1H">
+                                                <rect key="frame" x="0.0" y="204" width="81" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="diagValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncf-Z6-L9k">
+                                                <rect key="frame" x="0.0" y="272" width="75" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dateValue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIR-sf-iSM">
+                                                <rect key="frame" x="0.0" y="339" width="76" height="68"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CQj-Ea-ovv" firstAttribute="top" secondItem="4SF-1W-6jl" secondAttribute="bottom" constant="50" id="7k6-Ca-AIi"/>
+                            <constraint firstItem="eAR-ej-nxj" firstAttribute="top" secondItem="y5j-q8-G6f" secondAttribute="bottom" id="IJv-x3-zDT"/>
+                            <constraint firstItem="4SF-1W-6jl" firstAttribute="leading" secondItem="aSz-Sq-sVU" secondAttribute="leadingMargin" constant="50" id="LtI-U3-FOU"/>
+                            <constraint firstItem="eAR-ej-nxj" firstAttribute="leading" secondItem="aSz-Sq-sVU" secondAttribute="leadingMargin" constant="-20" id="NJb-Uh-bUR"/>
+                            <constraint firstItem="4SF-1W-6jl" firstAttribute="top" secondItem="eAR-ej-nxj" secondAttribute="bottom" constant="30" id="e1E-Er-dDt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4SF-1W-6jl" secondAttribute="trailing" constant="50" id="fD0-5Z-4wD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eAR-ej-nxj" secondAttribute="trailing" constant="-20" id="qYw-PQ-aT6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Basic" id="Zlp-Y6-8at"/>
+                    <connections>
+                        <outlet property="ageValue" destination="AGO-NN-QNz" id="qBW-yX-BSk"/>
+                        <outlet property="dateValue" destination="TIR-sf-iSM" id="KNf-TM-mtW"/>
+                        <outlet property="diagValue" destination="ncf-Z6-L9k" id="X2Z-Ts-TfM"/>
+                        <outlet property="genderValue" destination="Ptu-L8-2xQ" id="LkB-VB-tHR"/>
+                        <outlet property="nameValue" destination="OPa-4L-DU3" id="WG6-rb-aJr"/>
+                        <outlet property="roomValue" destination="S5b-xm-Z1H" id="5bY-nd-B2x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGu-fn-rTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

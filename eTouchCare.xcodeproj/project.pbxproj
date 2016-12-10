@@ -19,6 +19,7 @@
 		3E78068B1DF89E5200D5EFC7 /* PatientListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */; };
 		3E78068D1DF8A16600D5EFC7 /* PatientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068C1DF8A16600D5EFC7 /* PatientListCell.swift */; };
 		3E78068F1DF8B0D000D5EFC7 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78068E1DF8B0D000D5EFC7 /* Patient.swift */; };
+		3E7806911DFA324B00D5EFC7 /* PatientBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7806901DFA324B00D5EFC7 /* PatientBasicVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientListVC.swift; sourceTree = "<group>"; };
 		3E78068C1DF8A16600D5EFC7 /* PatientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientListCell.swift; sourceTree = "<group>"; };
 		3E78068E1DF8B0D000D5EFC7 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		3E7806901DFA324B00D5EFC7 /* PatientBasicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientBasicVC.swift; sourceTree = "<group>"; };
 		3EED3B88853732BEFC542146 /* Pods-eTouchCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10D158132D3193DE7A05850 /* Pods-eTouchCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTouchCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eTouchCareTests/Pods-eTouchCareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD8533CB425E568521E86040 /* Pods_eTouchCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTouchCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 			children = (
 				3E2AD9C21DF86C7600946316 /* LoginVC.swift */,
 				3E78068A1DF89E5200D5EFC7 /* PatientListVC.swift */,
+				3E7806901DFA324B00D5EFC7 /* PatientBasicVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E2AD9C31DF86C7600946316 /* LoginVC.swift in Sources */,
+				3E7806911DFA324B00D5EFC7 /* PatientBasicVC.swift in Sources */,
 				3E78068D1DF8A16600D5EFC7 /* PatientListCell.swift in Sources */,
 				3E2AD9C11DF86C7600946316 /* AppDelegate.swift in Sources */,
 				3E78068B1DF89E5200D5EFC7 /* PatientListVC.swift in Sources */,
