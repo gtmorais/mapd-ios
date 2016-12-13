@@ -18,7 +18,6 @@ class PatientListCell: UITableViewCell {
     
     @IBOutlet weak var diagnosis: UILabel!
 
-    @IBOutlet weak var patientImage: UIImageView!
     
     
 }
