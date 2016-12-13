@@ -26,14 +26,16 @@ class PatientBasicVC: UIViewController{
     
     override func viewDidLoad() {
         
-        
-        
-        self.nameValue.text = mPatient.name
-        self.ageValue.text = mPatient.age
-        self.genderValue.text = mPatient.gender
-        self.roomValue.text = mPatient.room
-        self.diagValue.text = mPatient.diagnosis
-        self.dateValue.text = mPatient.date
+        if let tbc = self.tabBarController as? PatientDetailTabbarController {
+            self.mPatient = tbc.mPatient
+            self.nameValue.text = mPatient.name
+            self.ageValue.text = mPatient.age
+            self.genderValue.text = mPatient.gender
+            self.roomValue.text = mPatient.room
+            self.diagValue.text = mPatient.diagnosis
+            self.dateValue.text = mPatient.date
+            
+        }
         
         
         
@@ -43,5 +45,7 @@ class PatientBasicVC: UIViewController{
         
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
     
 }

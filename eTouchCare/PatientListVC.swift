@@ -101,7 +101,9 @@ class PatientListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
         
         let selectedCell = sender as? PatientListCell
         let indexPath = tableView.indexPathForCell(selectedCell!)
-        let des = segue.destinationViewController.childViewControllers[0] as! PatientBasicVC
+//        let des = segue.destinationViewController.childViewControllers[0] as! PatientBasicVC
+//        des.mPatient = self.patients[(indexPath?.row)!]
+        let des = segue.destinationViewController as! PatientDetailTabbarController
         des.mPatient = self.patients[(indexPath?.row)!]
         
         
