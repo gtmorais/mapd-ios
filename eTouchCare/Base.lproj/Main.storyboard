@@ -279,7 +279,11 @@
                                 <rect key="frame" x="-4" y="20" width="383" height="44"/>
                                 <items>
                                     <navigationItem title="Patient List" id="dY3-AP-pcT">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="pT2-gV-gT8"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="pT2-gV-gT8">
+                                            <connections>
+                                                <action selector="logoutDidTouched:" destination="lDh-jg-UyE" id="PZL-82-tXh"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AVD-R1-maS">
                                             <connections>
                                                 <segue destination="20I-hy-owg" kind="show" id="Wv7-hH-cM6"/>
@@ -300,7 +304,7 @@
                             <constraint firstItem="KcP-jK-2xx" firstAttribute="top" secondItem="mA5-QE-6WR" secondAttribute="bottom" id="xeS-GD-G9x"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Patient List" id="Yte-z3-BUK">
+                    <tabBarItem key="tabBarItem" title="Patient List" image="list" id="Yte-z3-BUK">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -438,7 +442,7 @@
                             <constraint firstItem="1Mf-Kp-mI1" firstAttribute="top" secondItem="uWh-Bt-zLV" secondAttribute="bottom" constant="20" id="soc-u2-bHN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Diagnosis" id="AJt-sy-ReL"/>
+                    <tabBarItem key="tabBarItem" title="Diagnosis" image="diagnosis" id="AJt-sy-ReL"/>
                     <connections>
                         <outlet property="tableView" destination="uWh-Bt-zLV" id="teH-wv-vsc"/>
                         <segue destination="48v-ri-KgH" kind="show" identifier="toAdd" id="Ytf-Xj-670"/>
@@ -580,7 +584,7 @@
                             <constraint firstItem="Ing-K7-T59" firstAttribute="leading" secondItem="dab-hW-cLC" secondAttribute="leadingMargin" constant="-20" id="zRP-UW-kG6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Treatment" id="En8-GL-qAu"/>
+                    <tabBarItem key="tabBarItem" title="Treatment" image="treatment" id="En8-GL-qAu"/>
                     <connections>
                         <outlet property="tableView" destination="Lhn-Su-cML" id="Pt7-Q7-zvB"/>
                         <segue destination="48v-ri-KgH" kind="show" identifier="toAdd" id="HCO-sd-dnC"/>
@@ -900,7 +904,7 @@
                             <constraint firstItem="o5G-Al-CXb" firstAttribute="leading" secondItem="Qxi-jt-rPA" secondAttribute="leadingMargin" id="yBO-f5-Yz5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tests" id="nrq-DB-iDF"/>
+                    <tabBarItem key="tabBarItem" title="Tests" image="test" id="nrq-DB-iDF"/>
                     <connections>
                         <outlet property="tableView" destination="o5G-Al-CXb" id="gJ6-17-Nb1"/>
                         <segue destination="48v-ri-KgH" kind="show" identifier="toAdd" id="8Cu-i6-4qA"/>
@@ -1137,7 +1141,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="eAR-ej-nxj" secondAttribute="trailing" constant="-20" id="qYw-PQ-aT6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Basic" id="Zlp-Y6-8at"/>
+                    <tabBarItem key="tabBarItem" title="Basic" image="basic" id="Zlp-Y6-8at"/>
                     <connections>
                         <outlet property="ageValue" destination="AGO-NN-QNz" id="qBW-yX-BSk"/>
                         <outlet property="dateValue" destination="TIR-sf-iSM" id="KNf-TM-mtW"/>
@@ -1192,7 +1196,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="basic" width="29" height="30"/>
+        <image name="diagnosis" width="30" height="30"/>
+        <image name="list" width="29" height="30"/>
         <image name="logo" width="714" height="279"/>
+        <image name="test" width="30" height="30"/>
+        <image name="treatment" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HCO-sd-dnC"/>

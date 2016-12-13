@@ -22,6 +22,10 @@ class PatientListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     let basicRef = FIRDatabase.database().referenceWithPath("Basic")
     var patients = [Patient]()
     
+    @IBAction func logoutDidTouched(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
     
     override func viewDidLoad() {
