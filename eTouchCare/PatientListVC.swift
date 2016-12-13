@@ -51,6 +51,18 @@ class PatientListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
 
             self.tableView.reloadData()
         })
+        
+        basicRef.observeEventType(.ChildRemoved, withBlock: { snapshot in
+            for patient in self.patients {
+                if patient.pid == snapshot.key {
+                    //have to define model Patient as class instead of struct inorder to find the index
+                    self.patients.removeAtIndex(self.patients.indexOf(patient)!)
+                    self.tableView.reloadData()
+                }
+            }
+        
+        
+        })
     }
     
     
@@ -86,31 +98,35 @@ class PatientListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
-        
         performSegueWithIdentifier("toDetail", sender: tableView.cellForRowAtIndexPath(indexPath))
         
     }
     
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let targetPID = patients[indexPath.row].pid
+            self.basicRef.child(targetPID).removeValue()
+            
+            //remove all related detail values from the targeted pid
+            let diagRef = FIRDatabase.database().referenceWithPath("Diagnosis/"+targetPID)
+            diagRef.removeValue()
+            let testRef = FIRDatabase.database().referenceWithPath("Tests/"+targetPID)
+            testRef.removeValue()
+            let treatRef = FIRDatabase.database().referenceWithPath("Treatments/"+targetPID)
+            treatRef.removeValue()
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        
-        
-        
-        
-        
+        if segue.identifier == "toDetail"{
         let selectedCell = sender as? PatientListCell
-        let indexPath = tableView.indexPathForCell(selectedCell!)
-//        let des = segue.destinationViewController.childViewControllers[0] as! PatientBasicVC
-//        des.mPatient = self.patients[(indexPath?.row)!]
-        let des = segue.destinationViewController as! PatientDetailTabbarController
-        des.mPatient = self.patients[(indexPath?.row)!]
-        
-        
-        
-        
-        
-    
+            let indexPath = tableView.indexPathForCell(selectedCell!)
+            //        let des = segue.destinationViewController.childViewControllers[0] as! PatientBasicVC
+            //        des.mPatient = self.patients[(indexPath?.row)!]
+            let des = segue.destinationViewController as! PatientDetailTabbarController
+            des.mPatient = self.patients[(indexPath?.row)!]
+        }
     }
     
 }

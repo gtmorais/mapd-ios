@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-struct Diagnosis {
+class Diagnosis:NSObject{
     var name: String
     var diagId: String
     var des: String

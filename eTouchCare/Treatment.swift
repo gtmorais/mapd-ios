@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-struct Treatment {
+class Treatment:NSObject {
     var name: String
     var treatId: String
     var des: String

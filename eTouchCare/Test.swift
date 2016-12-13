@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-struct Test {
+class Test : NSObject{
     var name: String
     var testId: String
     var des: String

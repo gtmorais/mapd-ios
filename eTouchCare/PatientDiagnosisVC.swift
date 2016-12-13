@@ -67,6 +67,17 @@ class PatientDiagnosisVC: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             })
             
+            diagRef.observeEventType(.ChildRemoved, withBlock: { snapshot in
+                for diag in self.diagnosises {
+                    if diag.diagId == snapshot.key {
+                        //have to define model Patient as class instead of struct inorder to find the index
+                        self.diagnosises.removeAtIndex(self.diagnosises.indexOf(diag)!)
+                        self.tableView.reloadData()
+                    }
+                }
+                
+                
+            })
             
             
         }
@@ -86,6 +97,18 @@ class PatientDiagnosisVC: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.dateValue.text = diagnosises[indexPath.row].date
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            
+            
+            //remove all related detail values from the targeted pid
+            let targetRecordId = diagnosises[indexPath.row].diagId
+            let deleteRef = FIRDatabase.database().referenceWithPath("Diagnosis/"+mPatient.pid+"/"+targetRecordId)
+            deleteRef.removeValue()
+            
+        }
     }
     
 }

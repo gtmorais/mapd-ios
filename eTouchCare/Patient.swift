@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-struct Patient {
+class Patient: NSObject{
     var name: String
     var pid: String
     var room: String
