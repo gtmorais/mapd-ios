@@ -44,10 +44,6 @@ class AddNewPatientVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSou
     }
     
     //Mark: ACTIONS
-    @IBAction func stepperDidTouched(sender: AnyObject) {
-        
-        
-    }
     
     @IBAction func cancelDidTouched(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)

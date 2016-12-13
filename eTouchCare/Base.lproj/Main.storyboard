@@ -159,7 +159,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EfJ-IH-8SV">
                                                     <rect key="frame" x="13" y="11" width="357" height="48"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sit-N4-rwO" userLabel="pid&amp;name Stack View">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sit-N4-rwO" userLabel="pid&amp;name Stack View">
                                                             <rect key="frame" x="0.0" y="7" width="179" height="34"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZIe-e3-EPD" userLabel="key Stack View">
@@ -198,7 +198,7 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-k5-sfi" userLabel="room&amp;diag Stack View">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-k5-sfi" userLabel="room&amp;diag Stack View">
                                                             <rect key="frame" x="179" y="7" width="179" height="34"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-kp-RQZ" userLabel="key Stack View">
@@ -605,8 +605,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-RG-Njj">
-                                <rect key="frame" x="32" y="80" width="311" height="229"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-RG-Njj">
+                                <rect key="frame" x="32" y="80" width="311" height="230"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YkR-zv-975" userLabel="Name Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
@@ -627,33 +627,27 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xfr-u8-1dO" userLabel="Age Stack View">
-                                        <rect key="frame" x="0.0" y="50" width="311" height="29"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xfr-u8-1dO" userLabel="Age Stack View">
+                                        <rect key="frame" x="0.0" y="50" width="311" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNN-rc-RUa">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNN-rc-RUa">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxq-lc-Dzl" userLabel="Age Text Field">
-                                                <rect key="frame" x="40" y="0.0" width="172" height="29"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxq-lc-Dzl" userLabel="Age Text Field">
+                                                <rect key="frame" x="40" y="0.0" width="271" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="20I-hy-owg" id="y3p-2w-6qg"/>
                                                 </connections>
                                             </textField>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-32-g1U">
-                                                <rect key="frame" x="217" y="0.0" width="94" height="29"/>
-                                                <connections>
-                                                    <action selector="stepperDidTouched:" destination="20I-hy-owg" eventType="valueChanged" id="f26-W3-qqS"/>
-                                                </connections>
-                                            </stepper>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-Q5-lNk" userLabel="Gender Stack View">
-                                        <rect key="frame" x="0.0" y="99" width="311" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-Q5-lNk" userLabel="Gender Stack View">
+                                        <rect key="frame" x="0.0" y="100" width="311" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3o-7N-7ze">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
@@ -671,8 +665,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-QJ-dtI" userLabel="Room Stack View">
-                                        <rect key="frame" x="0.0" y="149" width="311" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mf4-QJ-dtI" userLabel="Room Stack View">
+                                        <rect key="frame" x="0.0" y="150" width="311" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMx-uq-bY4" userLabel="Room:">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
@@ -690,8 +684,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="owc-x7-GBc" userLabel="Diag Stack View">
-                                        <rect key="frame" x="0.0" y="199" width="311" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="owc-x7-GBc" userLabel="Diag Stack View">
+                                        <rect key="frame" x="0.0" y="200" width="311" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Diagnosis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPb-ML-TOc">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
@@ -723,7 +717,7 @@
                                     <constraint firstItem="Xfr-u8-1dO" firstAttribute="leading" secondItem="V3E-RG-Njj" secondAttribute="leading" id="uLK-dx-itr"/>
                                 </constraints>
                             </stackView>
-                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-O4-WTh">
+                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-O4-WTh">
                                 <rect key="frame" x="-4" y="329" width="383" height="216"/>
                             </pickerView>
                         </subviews>
