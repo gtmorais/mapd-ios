@@ -56,7 +56,7 @@ class AddNewPatientVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSou
         self.diagnosis = diagTF.text
         self.room = roomTF.text
         let tempDate = NSDate()
-        self.date = NSDateFormatter.localizedStringFromDate(tempDate, dateStyle: .FullStyle, timeStyle: .ShortStyle)
+        self.date = NSDateFormatter.localizedStringFromDate(tempDate, dateStyle: .MediumStyle, timeStyle: .NoStyle)
         
         basicRef.childByAutoId().setValue(["name":name,"age":age,"gender":gender,"room":room,"diagnosis":diagnosis,"date":date])
         dismissViewControllerAnimated(true, completion: nil)
